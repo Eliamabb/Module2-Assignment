@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="Projet.css"/>
+        <title>Index Html</title>
+        <meta name="viewport" content="witdth=device-width">
+    </head>
+
+  	<body>
+        <header> 
+            <img id="Baby Penguin" src="babypenguin.png" width="100" height="100">
+            <h1>Baby Penguin</h1>
+            <div id="Home Page">
+            	<a style="text-decoration: none" href="Home.html">Accueil</a> <!-- on enlève le soulignement du lien hypertexte pour plus de visibilité --->
+            </div>
+        </header>
+
+        <main> 
+        	<button id="Penguin">What is a penguin?</button>
+			<div id="Text_Penguin">
+				<p>	Penguins are a group of aquatic flightless birds. They live almost exclusively in the southern hemisphere: only one </br> species, the Galápagos penguin, is found north of the Equator. Highly adapted for life in the water, penguins have </br> countershaded dark and white plumage and flippers for swimming. 
+				</p>
+			</div>
+        </main>
+
+        <footer> 
+        	<h2>Penguin World®</h2>
+        	<div id="Text_Infos_Complementaires">
+        		<p>Penguin World is a non-profit organization.</p>
+        	</div>
+        </footer>
+
+	<script type="text/javascript">
+		/* Script to make the buttons on the Home page interactive: appearance and disappearance of text */
+  		let Penguin = document.getElementById("Penguin");
+  		let Text_Penguin= document.getElementById("Text_Penguin");
+  		Penguin.addEventListener("click", () => {
+      		if(getComputedStyle(Text_SportActu).display != "none"){
+        		Text_SportActu.style.display = "none";
+      		}   
+    		else {
+        		Text_Penguin.style.display = "block";
+      		}
+ 		})
+  	</script>
+  	</body>
+
+</html>
